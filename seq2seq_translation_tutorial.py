@@ -680,7 +680,7 @@ def trainIters(encoder, decoder, n_iters, print_every=1000, plot_every=100, lear
             plot_losses.append(plot_loss_avg)
             plot_loss_total = 0
 
-    showPlot(plot_losses)
+    #showPlot(plot_losses)
 
 
 ######################################################################
@@ -800,7 +800,7 @@ if use_cuda:
     attn_decoder1 = attn_decoder1.cuda()
 
 #trainIters(encoder1, attn_decoder1, 75000, print_every=5000)
-trainIters(encoder1, attn_decoder1, 10000, print_every=5000)
+trainIters(encoder1, attn_decoder1, 500, print_every=5000)
 
 ######################################################################
 #
@@ -824,7 +824,7 @@ evaluateRandomly(encoder1, attn_decoder1)
 
 output_words, attentions = evaluate(
     encoder1, attn_decoder1, "i hope so .")
-plt.matshow(attentions.numpy())
+#plt.matshow(attentions.numpy())
 
 
 ######################################################################
@@ -856,7 +856,7 @@ def evaluateAndShowAttention(input_sentence):
         encoder1, attn_decoder1, input_sentence)
     print('input =', input_sentence)
     print('output =', ' '.join(output_words))
-    showAttention(input_sentence, output_words, attentions)
+    #showAttention(input_sentence, output_words, attentions)
 
 
 evaluateAndShowAttention("like my fear of wearing pastels ?")

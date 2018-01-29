@@ -1,0 +1,70 @@
+Reading lines...
+Read 67517 sentence pairs
+Trimmed to 67099 sentence pairs
+Counting words...
+Counted words:
+diag1 22059
+diag2-3 22052
+['of course not . you had nothing to do with it .', 'let s get something straight jeff i never asked you to leave your wife .']
+6m 24s (- 6m 24s) (5000 50%) 4.3267
+12m 34s (- 0m 0s) (10000 100%) 4.0385
+> half hour . once i finish this octave i m gonna get breakfast . you see what s on the buffet ?
+= how long you been at it ?
+< i . <EOS>
+
+> i still sense some doubt in this group we could turn it around . you ll be up in the country ?
+= please eddie no fat lady sings shit .
+< i . <EOS>
+
+> he s got a lot of foolish notions about saving a lady in distress .
+= don t pay any attention to her .
+< i . <EOS>
+
+> landon !
+= scamming s a strong word .
+< you . <EOS>
+
+> it was you . . . that night in the tunnels . you . you did this to me .
+= andy ? . . . what ? what is it ? andy . . . are you okay ?
+< i . <EOS>
+
+> we just got here thirty seconds ago . isn t this stuff great ?
+= what say we get outta here and go crush a bucket ?
+< you . <EOS>
+
+> forgive me if i don t shake hands .
+= sheriff behan doc holliday .
+< you . <EOS>
+
+> you think that s all we busted you should see . . .
+= maybe in sonora .
+< you . <EOS>
+
+> you don t know me but i m a great admirer of yours .
+= who s calling ?
+< i . <EOS>
+
+> well yes i was . but i was your father then see ? but the real me john doe er that is long john willoughby i was the fellow up there with the book . you know what i mean ?
+= you were ? i thought you were chasing me ?
+< i . <EOS>
+
+input = like my fear of wearing pastels ?
+output = i . <EOS>
+input = you always been this selfish ?
+output = i . <EOS>
+input = who knows ?
+output = i . <EOS>
+Traceback (most recent call last):
+  File "seq2seq_translation_tutorial.py", line 868, in <module>
+    evaluateAndShowAttention("how is our little Find the Wench A Date plan progressing ?".lower())
+  File "seq2seq_translation_tutorial.py", line 856, in evaluateAndShowAttention
+    encoder1, attn_decoder1, input_sentence)
+  File "seq2seq_translation_tutorial.py", line 720, in evaluate
+    input_variable = variableFromSentence(input_lang, sentence)
+  File "seq2seq_translation_tutorial.py", line 513, in variableFromSentence
+    indexes = indexesFromSentence(lang, sentence)
+  File "seq2seq_translation_tutorial.py", line 509, in indexesFromSentence
+    return [lang.word2index[word] for word in sentence.split(' ')]
+  File "seq2seq_translation_tutorial.py", line 509, in <listcomp>
+    return [lang.word2index[word] for word in sentence.split(' ')]
+KeyError: 'progressing'

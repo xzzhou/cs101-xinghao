@@ -1,0 +1,68 @@
+Reading lines...
+Read 67517 sentence pairs
+Trimmed to 67099 sentence pairs
+Counting words...
+Counted words:
+diag1 22059
+diag2-3 22052
+['hello rob . remember me ? i m ray . ian .', 'can i help you ?']
+> why ?
+= yes we re going to have this conversation again . i . . .i have to leave . i have to move out .
+< i . <EOS>
+
+> a la votre .
+= that s what counts . if you re not passionate about it don t waste your time . that s why i quit college . . . plus i m a lazy bastard . wait i know this . . . a votre sante .
+< i . <EOS>
+
+> it s better when you let me say it .
+= then you should stay here .
+< i . <EOS>
+
+> no .
+= isn t there anything else i can do for you ? have you bought your ticket ?
+< i . <EOS>
+
+> yep there they are . . . they always look the same every year . . .
+= you can get the general idea . . .
+< i . <EOS>
+
+> hi .
+= oh elliot !
+< i . <EOS>
+
+> i usually sing a medley of old favorites when i bathe any requests ?
+= have you ever heard of anyone taking a shower with his shoes on ? what a nut .
+< i . <EOS>
+
+> am i a cursed woman doctor ? must i be betrayed by every man i meet 
+= you ve no right to assault me in this fashion i ll call for my footman . i ll have you removed 
+< i . <EOS>
+
+> i do . it feels like how being in love should be . floating through a dark blue sky .
+= you like chagall ?
+< i . <EOS>
+
+> maybe there s fingerprints on it ?
+= a rich possibly fat slob .
+< i . <EOS>
+
+input = like my fear of wearing pastels ?
+output = i . <EOS>
+input = you always been this selfish ?
+output = i . <EOS>
+input = who knows ?
+output = i . <EOS>
+Traceback (most recent call last):
+  File "seq2seq_translation_tutorial.py", line 868, in <module>
+    evaluateAndShowAttention("how is our little Find the Wench A Date plan progressing ?".lower())
+  File "seq2seq_translation_tutorial.py", line 856, in evaluateAndShowAttention
+    encoder1, attn_decoder1, input_sentence)
+  File "seq2seq_translation_tutorial.py", line 720, in evaluate
+    input_variable = variableFromSentence(input_lang, sentence)
+  File "seq2seq_translation_tutorial.py", line 513, in variableFromSentence
+    indexes = indexesFromSentence(lang, sentence)
+  File "seq2seq_translation_tutorial.py", line 509, in indexesFromSentence
+    return [lang.word2index[word] for word in sentence.split(' ')]
+  File "seq2seq_translation_tutorial.py", line 509, in <listcomp>
+    return [lang.word2index[word] for word in sentence.split(' ')]
+KeyError: 'progressing'

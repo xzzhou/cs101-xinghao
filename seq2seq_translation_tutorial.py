@@ -865,7 +865,15 @@ evaluateAndShowAttention("you always been this selfish ?")
 
 evaluateAndShowAttention("who knows ?")
 
-evaluateAndShowAttention("how is our little Find the Wench A Date plan progressing ?".lower())
+evaluateAndShowAttention("Yeah, I haven't really absorbed that one .".lower())
+
+evaluateAndShowAttention("Fuck you !".lower())
+
+evaluateAndShowAttention("Do you love me ?".lower())
+
+evaluateAndShowAttention("When can we marry ?".lower())
+
+
 
 
 ######################################################################

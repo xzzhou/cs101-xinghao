@@ -800,7 +800,7 @@ if use_cuda:
     attn_decoder1 = attn_decoder1.cuda()
 
 #trainIters(encoder1, attn_decoder1, 75000, print_every=5000)
-trainIters(encoder1, attn_decoder1, 150000, print_every=5000)
+trainIters(encoder1, attn_decoder1, 1000000, print_every=5000)
 
 ######################################################################
 #
@@ -865,7 +865,7 @@ evaluateAndShowAttention("you always been this selfish ?")
 
 evaluateAndShowAttention("who knows ?")
 
-evaluateAndShowAttention("Yeah, I haven't really absorbed that one .".lower())
+evaluateAndShowAttention("Yeah , I haven't really absorbed that one .".lower())
 
 evaluateAndShowAttention("Fuck you !".lower())
 

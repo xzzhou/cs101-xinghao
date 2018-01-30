@@ -1,0 +1,98 @@
+Reading lines...
+Read 67517 sentence pairs
+Trimmed to 67099 sentence pairs
+Counting words...
+Counted words:
+diag1 22059
+diag2-3 22052
+['here s luck to the bride and bridegroom .', 'anyway i m glad you two are going to be happy and have all the things i couldn t give her . you know hildy is about the best reporter in the country and that goes regardless of sex . but all she really ever wanted was a home .']
+6m 8s (- 178m 18s) (5000 3%) 4.3488
+11m 49s (- 165m 33s) (10000 6%) 3.9411
+17m 46s (- 160m 0s) (15000 10%) 3.8674
+23m 26s (- 152m 22s) (20000 13%) 3.7708
+29m 23s (- 146m 59s) (25000 16%) 3.8208
+35m 16s (- 141m 7s) (30000 20%) 3.7593
+40m 58s (- 134m 37s) (35000 23%) 3.7135
+46m 43s (- 128m 29s) (40000 26%) 3.7024
+52m 28s (- 122m 27s) (45000 30%) 3.7273
+58m 13s (- 116m 27s) (50000 33%) 3.6866
+64m 7s (- 110m 44s) (55000 36%) 3.6403
+69m 57s (- 104m 56s) (60000 40%) 3.6713
+75m 38s (- 98m 54s) (65000 43%) 3.6345
+81m 11s (- 92m 47s) (70000 46%) 3.5722
+86m 55s (- 86m 55s) (75000 50%) 3.6524
+92m 51s (- 81m 14s) (80000 53%) 3.7112
+98m 44s (- 75m 30s) (85000 56%) 3.6885
+104m 28s (- 69m 39s) (90000 60%) 3.6574
+110m 9s (- 63m 46s) (95000 63%) 3.5727
+116m 5s (- 58m 2s) (100000 66%) 3.6954
+122m 2s (- 52m 18s) (105000 70%) 3.6833
+127m 57s (- 46m 31s) (110000 73%) 3.6329
+134m 8s (- 40m 49s) (115000 76%) 3.6068
+140m 2s (- 35m 0s) (120000 80%) 3.6173
+146m 5s (- 29m 13s) (125000 83%) 3.6941
+151m 57s (- 23m 22s) (130000 86%) 3.5448
+157m 47s (- 17m 31s) (135000 90%) 3.6042
+163m 36s (- 11m 41s) (140000 93%) 3.6282
+169m 28s (- 5m 50s) (145000 96%) 3.6707
+175m 22s (- 0m 0s) (150000 100%) 3.6469
+> can t you get him ?
+= what do you think ?
+< i . . . <EOS>
+
+> the sawbones ?
+= ah i got a date tonight with that mary girl i told you about .
+< i . <EOS>
+
+> jack stop that . i m still mad at you . . . . . .who knows what wouldve happened if you hadnt stepped in at the store .
+= you had a heart attack ?
+< i . . . <EOS>
+
+> it s just a scratch . you won t die . she turns away from him .
+= my hand .
+< i . . . . <EOS>
+
+> please don t mess me up with bandages mrs . brenner .
+= and locked it .
+< i . you . . <EOS>
+
+> go ask him why don t you ? ask him yourself .
+= you don t think he d be helpful ?
+< yes . <EOS>
+
+> you ll get it . now what s the story ? i ll have the paper send the money right down to you . i swear it on my mother s grave .
+= never mind it ? that s not my money ! that s bruce s money !
+< you re not . . . . . <EOS>
+
+> no three thousand at least . he ll start you off at five hundred a game he ll beat the pants off you . that s the way he plays when he comes up against a man who knows the way the game is . he ll beat you flat four or five games maybe more depending on how uh . . . steady your nerves are . but he might he just might be a little scared of you and that could change things . but i wouldn t count on it .
+= a thousand .
+< i . . . . . . <EOS>
+
+> that day had you followed me to the market ?
+= i don t care to bargain . it s full of saffron just in case you think i m giving it to you to encourage your sewing .
+< i m not . . . . <EOS>
+
+> what is it ?
+= screwball ! you dolt ! i ve a mind to change you into a toad .
+< i . . . . . . . <EOS>
+
+input = like my fear of wearing pastels ?
+output = yes . <EOS>
+input = you always been this selfish ?
+output = i . . . . . <EOS>
+input = who knows ?
+output = i . . . <EOS>
+Traceback (most recent call last):
+  File "seq2seq_translation_tutorial.py", line 868, in <module>
+    evaluateAndShowAttention("Yeah, I haven't really absorbed that one .".lower())
+  File "seq2seq_translation_tutorial.py", line 856, in evaluateAndShowAttention
+    encoder1, attn_decoder1, input_sentence)
+  File "seq2seq_translation_tutorial.py", line 720, in evaluate
+    input_variable = variableFromSentence(input_lang, sentence)
+  File "seq2seq_translation_tutorial.py", line 513, in variableFromSentence
+    indexes = indexesFromSentence(lang, sentence)
+  File "seq2seq_translation_tutorial.py", line 509, in indexesFromSentence
+    return [lang.word2index[word] for word in sentence.split(' ')]
+  File "seq2seq_translation_tutorial.py", line 509, in <listcomp>
+    return [lang.word2index[word] for word in sentence.split(' ')]
+KeyError: 'yeah,'

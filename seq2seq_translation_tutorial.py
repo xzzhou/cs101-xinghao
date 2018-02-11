@@ -859,13 +859,13 @@ def evaluateAndShowAttention(input_sentence):
     #showAttention(input_sentence, output_words, attentions)
 
 
-evaluateAndShowAttention("like my fear of wearing pastels ?")
+evaluateAndShowAttention("I want to go with you !".lower())
 
-evaluateAndShowAttention("you always been this selfish ?")
+evaluateAndShowAttention("What are you doing ?")
 
 evaluateAndShowAttention("who knows ?")
 
-evaluateAndShowAttention("Yeah I haven't really absorbed that one .".lower())
+evaluateAndShowAttention("Relax .".lower())
 
 evaluateAndShowAttention("Fuck you !".lower())
 

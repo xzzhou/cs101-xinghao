@@ -861,7 +861,7 @@ def evaluateAndShowAttention(input_sentence):
 
 evaluateAndShowAttention("I want to go with you !".lower())
 
-evaluateAndShowAttention("What are you doing ?")
+evaluateAndShowAttention("What are you doing ?".lower())
 
 evaluateAndShowAttention("who knows ?")
 

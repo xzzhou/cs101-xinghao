@@ -772,7 +772,7 @@ def evaluateRandomly(encoder, decoder, n=10):
         print('')
 
 def save():
-    save_filename = 'a'
+    save_filename = '_190000_1024h'
     torch.save(encoder1, 'encoder1' + save_filename + '.pth')
     torch.save(attn_decoder1, 'attn_decoder1' + save_filename + '.pth')
 

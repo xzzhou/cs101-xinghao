@@ -796,7 +796,7 @@ def save():
 #    encoder and decoder are initialized and run ``trainIters`` again.
 #
 
-hidden_size = 256
+hidden_size = 1024
 encoder1 = EncoderRNN(input_lang.n_words, hidden_size)
 attn_decoder1 = AttnDecoderRNN(hidden_size, output_lang.n_words, dropout_p=0.1)
 
@@ -806,7 +806,7 @@ if use_cuda:
     attn_decoder1 = attn_decoder1.cuda()
 
 #trainIters(encoder1, attn_decoder1, 75000, print_every=5000)
-trainIters(encoder1, attn_decoder1, 200, print_every=20)
+trainIters(encoder1, attn_decoder1, 190000, print_every=20)
 
 ######################################################################
 #

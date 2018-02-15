@@ -338,7 +338,7 @@ import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 import numpy as np
 
-filename = 'a'
+filename = '_190000_1024h'
 encoder1 = torch.load('encoder1' + filename + '.pth')
 attn_decoder1 = torch.load('attn_decoder1' + filename + '.pth')
 print('load successfully')

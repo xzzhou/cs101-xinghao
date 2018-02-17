@@ -22,10 +22,11 @@ import string
 import re
 import random
 
+import torch
+import torch.nn as nn
+from torch.autograd import Variable
 
-
-SOS_token = 0
-EOS_token = 1
+from constants import *
 
 
 class Lang:
@@ -112,16 +113,6 @@ def readLangs(lang1, lang2, reverse=False):
 # earlier).
 #
 
-MAX_LENGTH = 100
-
-eng_prefixes = (
-    "i am ", "i m ",
-    "he is", "he s ",
-    "she is", "she s",
-    "you are", "you re ",
-    "we are", "we re ",
-    "they are", "they re "
-)
 
 
 def filterPair(p):
@@ -157,8 +148,48 @@ def prepareData(lang1, lang2, reverse=False):
     return input_lang, output_lang, pairs
 
 
+
+
+######################################################################
+# .. note:: There are other forms of attention that work around the length
+#   limitation by using a relative position approach. Read about "local
+#   attention" in `Effective Approaches to Attention-based Neural Machine
+#   Translation <https://arxiv.org/abs/1508.04025>`__.
+#
+# Training
+# ========
+#
+# Preparing Training Data
+# -----------------------
+#
+# To train, for each pair we will need an input tensor (indexes of the
+# words in the input sentence) and target tensor (indexes of the words in
+# the target sentence). While creating these vectors we will append the
+# EOS token to both sequences.
+#
+
+def indexesFromSentence(lang, sentence):
+    return [lang.word2index[word] for word in sentence.split(' ')]
+
+
+def variableFromSentence(lang, sentence):
+    indexes = indexesFromSentence(lang, sentence)
+    indexes.append(EOS_token)
+    result = Variable(torch.LongTensor(indexes).view(-1, 1))
+    if use_cuda:
+        return result.cuda()
+    else:
+        return result
+
+
+def variablesFromPair(input_lang, output_lang, pair):
+    input_variable = variableFromSentence(input_lang, pair[0])
+    target_variable = variableFromSentence(output_lang, pair[1])
+    return (input_variable, target_variable)
+
+
 #input_lang, output_lang, pairs = prepareData('diag1', 'diag2-4-from-other', False)
 #print(random.choice(pairs))
 #print(normalizeString("How are's you?"))
-print(re.sub(r"([.!?])", r" \1", "How's are you?"))
+#print(re.sub(r"([.!?])", r" \1", "How's are you?"))
 

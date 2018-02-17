@@ -1,0 +1,100 @@
+Reading lines...
+Read 12771 sentence pairs
+Trimmed to 12771 sentence pairs
+Counting words...
+Counted words:
+diag1 1320
+diag2-4-from-other 1316
+['is something wrong ?', 'i want to know if my sister is here .']
+2m 48s (- 104m 8s) (5000 2%) 3.3581
+5m 18s (- 95m 38s) (10000 5%) 3.1529
+7m 46s (- 90m 44s) (15000 7%) 3.0313
+10m 14s (- 87m 0s) (20000 10%) 2.9672
+12m 44s (- 84m 2s) (25000 13%) 2.9479
+15m 12s (- 81m 6s) (30000 15%) 2.9196
+17m 41s (- 78m 18s) (35000 18%) 2.8573
+20m 9s (- 75m 35s) (40000 21%) 2.8346
+22m 37s (- 72m 53s) (45000 23%) 2.7551
+25m 5s (- 70m 16s) (50000 26%) 2.7063
+27m 35s (- 67m 42s) (55000 28%) 2.7250
+30m 4s (- 65m 10s) (60000 31%) 2.6949
+32m 34s (- 62m 38s) (65000 34%) 2.6455
+35m 6s (- 60m 11s) (70000 36%) 2.6243
+37m 39s (- 57m 45s) (75000 39%) 2.6259
+40m 12s (- 55m 17s) (80000 42%) 2.5311
+42m 45s (- 52m 49s) (85000 44%) 2.4486
+45m 17s (- 50m 19s) (90000 47%) 2.4626
+47m 50s (- 47m 50s) (95000 50%) 2.3715
+50m 23s (- 45m 21s) (100000 52%) 2.3835
+52m 57s (- 42m 52s) (105000 55%) 2.3123
+55m 31s (- 40m 23s) (110000 57%) 2.2439
+58m 7s (- 37m 54s) (115000 60%) 2.2279
+60m 43s (- 35m 25s) (120000 63%) 2.2183
+63m 18s (- 32m 55s) (125000 65%) 2.1677
+65m 53s (- 30m 24s) (130000 68%) 2.1631
+68m 28s (- 27m 53s) (135000 71%) 2.1084
+71m 4s (- 25m 23s) (140000 73%) 2.1152
+73m 41s (- 22m 52s) (145000 76%) 2.0749
+76m 18s (- 20m 21s) (150000 78%) 2.0284
+78m 53s (- 17m 48s) (155000 81%) 2.0255
+81m 30s (- 15m 17s) (160000 84%) 1.9952
+84m 8s (- 12m 44s) (165000 86%) 2.0133
+86m 43s (- 10m 12s) (170000 89%) 1.9408
+89m 21s (- 7m 39s) (175000 92%) 1.9594
+91m 57s (- 5m 6s) (180000 94%) 1.9807
+94m 35s (- 2m 33s) (185000 97%) 1.9616
+97m 10s (- 0m 0s) (190000 100%) 1.9664
+> it s the cops . shit !
+= how d that happen ?
+< what . <EOS>
+
+> this is the best movie i ve ever seen in my life .
+= i don t get it .
+< i don t . it is . <EOS>
+
+> you think she really likes him ?
+= she doesn t give a shit about him .
+< she s my partner . <EOS>
+
+> is there any chance ?
+= i guess there s always a chance .
+< i guess i guess . <EOS>
+
+> relax .
+= don t act like i don t know what s real . beat i m not the one that s crazy here .
+< don t t you <EOS>
+
+> just hold on !
+= i can t !
+< i can t ! <EOS>
+
+> it s very small .
+= big enough .
+< big enough . <EOS>
+
+> don t you have anywhere to go ?
+= i ve got plenty of places to go .
+< i ve got plenty . <EOS>
+
+> so this is what you do huh ?
+= oh hello peter .
+< do you about it ? <EOS>
+
+> was it great ?
+= it was okay .
+< it was okay . <EOS>
+
+Traceback (most recent call last):
+  File "seq2seq_translation_tutorial.py", line 862, in <module>
+    evaluateAndShowAttention("like my fear of wearing pastels ?")
+  File "seq2seq_translation_tutorial.py", line 856, in evaluateAndShowAttention
+    encoder1, attn_decoder1, input_sentence)
+  File "seq2seq_translation_tutorial.py", line 720, in evaluate
+    input_variable = variableFromSentence(input_lang, sentence)
+  File "seq2seq_translation_tutorial.py", line 513, in variableFromSentence
+    indexes = indexesFromSentence(lang, sentence)
+  File "seq2seq_translation_tutorial.py", line 509, in indexesFromSentence
+    return [lang.word2index[word] for word in sentence.split(' ')]
+  File "seq2seq_translation_tutorial.py", line 509, in <listcomp>
+    return [lang.word2index[word] for word in sentence.split(' ')]
+KeyError: 'pastels'

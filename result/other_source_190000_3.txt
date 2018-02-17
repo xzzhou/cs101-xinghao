@@ -1,0 +1,102 @@
+Reading lines...
+Read 12771 sentence pairs
+Trimmed to 12771 sentence pairs
+Counting words...
+Counted words:
+diag1 1320
+diag2-4-from-other 1316
+['that s too bad .', 'what ?']
+2m 43s (- 100m 49s) (5000 2%) 3.3473
+5m 7s (- 92m 23s) (10000 5%) 3.1210
+7m 33s (- 88m 8s) (15000 7%) 2.9825
+10m 0s (- 85m 6s) (20000 10%) 3.0217
+12m 26s (- 82m 4s) (25000 13%) 2.9276
+14m 54s (- 79m 28s) (30000 15%) 2.9354
+17m 19s (- 76m 45s) (35000 18%) 2.9030
+19m 45s (- 74m 4s) (40000 21%) 2.8733
+22m 11s (- 71m 30s) (45000 23%) 2.8187
+24m 37s (- 68m 57s) (50000 26%) 2.7394
+27m 5s (- 66m 29s) (55000 28%) 2.7282
+29m 30s (- 63m 56s) (60000 31%) 2.7033
+31m 56s (- 61m 25s) (65000 34%) 2.6356
+34m 26s (- 59m 2s) (70000 36%) 2.6658
+36m 55s (- 56m 36s) (75000 39%) 2.5550
+39m 23s (- 54m 10s) (80000 42%) 2.5515
+41m 52s (- 51m 43s) (85000 44%) 2.4782
+44m 22s (- 49m 18s) (90000 47%) 2.4448
+46m 53s (- 46m 53s) (95000 50%) 2.4410
+49m 22s (- 44m 26s) (100000 52%) 2.3444
+51m 53s (- 42m 0s) (105000 55%) 2.3182
+54m 24s (- 39m 34s) (110000 57%) 2.2608
+56m 55s (- 37m 7s) (115000 60%) 2.2343
+59m 30s (- 34m 42s) (120000 63%) 2.2016
+62m 1s (- 32m 15s) (125000 65%) 2.1733
+64m 33s (- 29m 47s) (130000 68%) 2.1563
+67m 5s (- 27m 20s) (135000 71%) 2.1385
+69m 38s (- 24m 52s) (140000 73%) 2.1109
+72m 11s (- 22m 24s) (145000 76%) 2.0336
+74m 44s (- 19m 55s) (150000 78%) 2.0890
+77m 18s (- 17m 27s) (155000 81%) 2.0309
+79m 53s (- 14m 58s) (160000 84%) 2.0278
+82m 28s (- 12m 29s) (165000 86%) 2.0087
+85m 1s (- 10m 0s) (170000 89%) 1.9763
+87m 34s (- 7m 30s) (175000 92%) 1.9946
+90m 8s (- 5m 0s) (180000 94%) 1.9204
+92m 40s (- 2m 30s) (185000 97%) 1.9601
+95m 13s (- 0m 0s) (190000 100%) 1.9581
+> what ?
+= look .
+< don t ask a second . <EOS>
+
+> yes ?
+= do you remember me ?
+< it looks so good . <EOS>
+
+> i d have liked to have said goodbye .
+= he knows .
+< he knows . <EOS>
+
+> it worked ! there they go !
+= let s do it !
+< let s do ! <EOS>
+
+> you re the memory guy ?
+= how do you know about me ?
+< how do you know me ? <EOS>
+
+> very well .
+= very well .
+< very well . <EOS>
+
+> we just found another body .
+= who s ?
+< who ? <EOS>
+
+> who are they ?
+= oh just some friends !
+< oh just the just some some friends . <EOS>
+
+> not even a little bit ?
+= i already told you i m not .
+< i already told you . <EOS>
+
+> i think i ll go to bed .
+= oh . well goodnight .
+< well do you . . . . <EOS>
+
+input = i want to go with you !
+output = there ll be time with you ? <EOS>
+Traceback (most recent call last):
+  File "seq2seq_translation_tutorial.py", line 864, in <module>
+    evaluateAndShowAttention("What are you doing ?")
+  File "seq2seq_translation_tutorial.py", line 856, in evaluateAndShowAttention
+    encoder1, attn_decoder1, input_sentence)
+  File "seq2seq_translation_tutorial.py", line 720, in evaluate
+    input_variable = variableFromSentence(input_lang, sentence)
+  File "seq2seq_translation_tutorial.py", line 513, in variableFromSentence
+    indexes = indexesFromSentence(lang, sentence)
+  File "seq2seq_translation_tutorial.py", line 509, in indexesFromSentence
+    return [lang.word2index[word] for word in sentence.split(' ')]
+  File "seq2seq_translation_tutorial.py", line 509, in <listcomp>
+    return [lang.word2index[word] for word in sentence.split(' ')]
+KeyError: 'What'

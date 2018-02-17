@@ -1,0 +1,100 @@
+Reading lines...
+Read 12771 sentence pairs
+Trimmed to 12771 sentence pairs
+Counting words...
+Counted words:
+diag1 1320
+diag2-4-from-other 1316
+['hi .', 'hi . want a drink ?']
+2m 50s (- 105m 23s) (5000 2%) 3.3621
+5m 23s (- 96m 59s) (10000 5%) 3.1363
+7m 54s (- 92m 14s) (15000 7%) 3.0242
+10m 24s (- 88m 30s) (20000 10%) 2.9527
+12m 56s (- 85m 22s) (25000 13%) 2.9193
+15m 25s (- 82m 17s) (30000 15%) 2.8785
+17m 57s (- 79m 29s) (35000 18%) 2.8755
+20m 28s (- 76m 47s) (40000 21%) 2.8521
+22m 59s (- 74m 5s) (45000 23%) 2.8183
+25m 31s (- 71m 27s) (50000 26%) 2.8032
+28m 6s (- 68m 59s) (55000 28%) 2.7662
+30m 41s (- 66m 29s) (60000 31%) 2.6841
+33m 15s (- 63m 57s) (65000 34%) 2.6618
+35m 51s (- 61m 27s) (70000 36%) 2.6062
+38m 27s (- 58m 58s) (75000 39%) 2.5718
+41m 4s (- 56m 28s) (80000 42%) 2.5470
+43m 40s (- 53m 56s) (85000 44%) 2.4869
+46m 15s (- 51m 23s) (90000 47%) 2.4290
+48m 52s (- 48m 52s) (95000 50%) 2.4218
+51m 27s (- 46m 18s) (100000 52%) 2.3509
+54m 5s (- 43m 47s) (105000 55%) 2.2914
+56m 43s (- 41m 15s) (110000 57%) 2.2999
+59m 20s (- 38m 41s) (115000 60%) 2.2093
+61m 58s (- 36m 8s) (120000 63%) 2.1650
+64m 35s (- 33m 35s) (125000 65%) 2.1730
+67m 15s (- 31m 2s) (130000 68%) 2.1337
+69m 54s (- 28m 28s) (135000 71%) 2.1390
+72m 32s (- 25m 54s) (140000 73%) 2.0506
+75m 12s (- 23m 20s) (145000 76%) 2.0714
+77m 53s (- 20m 46s) (150000 78%) 2.0790
+80m 30s (- 18m 10s) (155000 81%) 2.0385
+83m 10s (- 15m 35s) (160000 84%) 2.0099
+85m 50s (- 13m 0s) (165000 86%) 2.0219
+88m 30s (- 10m 24s) (170000 89%) 1.9906
+91m 11s (- 7m 48s) (175000 92%) 2.0060
+93m 50s (- 5m 12s) (180000 94%) 1.9852
+96m 32s (- 2m 36s) (185000 97%) 1.9443
+99m 14s (- 0m 0s) (190000 100%) 1.9676
+> we already know . all about it .
+= it was on the television .
+< it was on the door . <EOS>
+
+> you think it killed . . . yeah i guess not .
+= let s just get out of here .
+< then you will . <EOS>
+
+> my money s in that office right ?
+= uh huh .
+< uh huh . <EOS>
+
+> how do you plan to do that ?
+= with smoke .
+< do what she s with him ? <EOS>
+
+> but you must know someone who has seen or heard of my sister .
+= i m afraid not .
+< i m not afraid your cousin your cousin your cousin . <EOS>
+
+> what s up with you ?
+= nothing .
+< nothing . nothing . i m not to <EOS>
+
+> haven t you ever wanted to fall in love ?
+= me ?
+< if you love me . <EOS>
+
+> are we gonna keep going with this game ?
+= yes .
+< yes . <EOS>
+
+> this is a new town for you . do you like it here ?
+= no .
+< no i <EOS>
+
+> land of death . how do i get there ?
+= kid listen that s all i m saying . and you didn t hear it from me .
+< kid ll be right here . <EOS>
+
+input = i want to go with you !
+output = don ll be there . you can t . <EOS>
+input = what are you doing ?
+output = i re putting . <EOS>
+input = who knows ?
+output = where do you ? <EOS>
+input = relax .
+output = don t t don t know the <EOS>
+input = fuck you !
+output = i m sure <EOS>
+input = do you love me ?
+output = do you love me ? <EOS>
+input = when can we marry ?
+output = it s it about it . we ll be be here . <EOS>

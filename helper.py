@@ -73,5 +73,5 @@ def variablesFromPair(input_lang, output_lang, pair):
 
 
 def save(save_filename, encoder1, attn_decoder1):
-    torch.save(encoder1, save_filename + '_decoder1.pth')
+    torch.save(encoder1, save_filename + '_encoder1.pth')
     torch.save(attn_decoder1, save_filename + '_attn_decoder1.pth')

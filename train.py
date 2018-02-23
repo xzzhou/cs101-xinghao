@@ -126,11 +126,19 @@ def trainIters(encoder, decoder, input_lang, output_lang, pairs, n_iters, print_
     plot_losses = []
     print_loss_total = 0  # Reset every print_every
     plot_loss_total = 0  # Reset every plot_every
+    
+    train_loss = []
+    test_loss = []
 
     encoder_optimizer = optim.SGD(encoder.parameters(), lr=learning_rate)
     decoder_optimizer = optim.SGD(decoder.parameters(), lr=learning_rate)
-    training_pairs = [variablesFromPair(input_lang, output_lang, random.choice(pairs))
-                      for i in range(n_iters)]
+    
+    pairs_length = len(pairs)
+    training_num = int(0.85 * pairs_length)
+    random.shuffle(pairs)    
+    
+    training_pairs = [variablesFromPair(input_lang, output_lang, pairs[random.randrange(training_num)]) \
+                                      for i in range(n_iters)]
     criterion = nn.NLLLoss()
 
     for iter in range(1, n_iters + 1):
@@ -146,14 +154,71 @@ def trainIters(encoder, decoder, input_lang, output_lang, pairs, n_iters, print_
         if iter % print_every == 0:
             print_loss_avg = print_loss_total / print_every
             print_loss_total = 0
-            print('%s (%d %d%%) %.4f' % (timeSince(start, iter / n_iters),
-                                         iter, iter / n_iters * 100, print_loss_avg))
+            train_loss.append(print_loss_avg)
+            testing_error = testError(encoder, decoder, input_lang, output_lang, pairs, criterion)
+            test_loss.append(testing_error)
+            print('%s (%d %d%%) train = %.4f test = %.4f' % (timeSince(start, iter / n_iters),
+                                         iter, iter / n_iters * 100, print_loss_avg, testing_error))
 
         if iter % plot_every == 0:
             plot_loss_avg = plot_loss_total / plot_every
             plot_losses.append(plot_loss_avg)
             plot_loss_total = 0
+    
+
+    save_list('./result/r0222_train_loss.txt', train_loss)
+    save_list('./result/r0222_test_loss.txt',test_loss)
 
     #showPlot(plot_losses)
 
+
+#@return the test set error
+def testError(encoder, decoder, input_lang, output_lang, pairs, criterion, max_length = MAX_LENGTH):
+    pairs_length = len(pairs)
+    training_num = int(0.85 * pairs_length)
+    testing_num = pairs_length - training_num
+    testing_pairs = [variablesFromPair(input_lang, output_lang, \
+                                       pairs[i]) for i in range(training_num, pairs_length)]
+    total_loss = 0
+    for i in range(len(testing_pairs)):
+        encoder_hidden = encoder.initHidden()
+        testing_pair = testing_pairs[i]
+        input_variable = testing_pair[0]
+        target_variable = testing_pair[1]
+        
+        input_length = input_variable.size()[0]
+        target_length = target_variable.size()[0]
+        
+        encoder_outputs = Variable(torch.zeros(max_length, encoder.hidden_size))
+        encoder_outputs = encoder_outputs.cuda() if use_cuda else encoder_outputs
+
+    
+        for ei in range(input_length):
+            encoder_output, encoder_hidden = encoder(input_variable[ei],
+                                                 encoder_hidden)
+            encoder_outputs[ei] = encoder_outputs[ei] + encoder_output[0][0]
+        
+        decoder_input = Variable(torch.LongTensor([[SOS_token]]))  # SOS
+        decoder_input = decoder_input.cuda() if use_cuda else decoder_input
+
+        
+        decoder_hidden = encoder_hidden
+        loss = 0
+        
+        for di in range(target_length):
+            decoder_output, decoder_hidden, decoder_attention = decoder(
+                decoder_input, decoder_hidden, encoder_outputs)
+            
+            topv, topi = decoder_output.data.topk(1)
+            ni = topi[0][0]
+
+            decoder_input = Variable(torch.LongTensor([[ni]]))
+            decoder_input = decoder_input.cuda() if use_cuda else decoder_input
+
+            loss += criterion(decoder_output, target_variable[di])
+            if ni == EOS_token:
+                break
+        
+        total_loss += loss.data[0] / target_length
+    return total_loss / testing_num
 

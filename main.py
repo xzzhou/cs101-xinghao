@@ -27,7 +27,7 @@ if use_cuda:
     encoder1 = encoder1.cuda()
     attn_decoder1 = attn_decoder1.cuda()
     
-trainIters(encoder1, attn_decoder1, input_lang, output_lang, pairs, 200, print_every=10)
+trainIters(encoder1, attn_decoder1, input_lang, output_lang, pairs, 20, print_every=5)
 
 save('./savedModel/test_2',encoder1, attn_decoder1)
 

@@ -11,11 +11,12 @@ from constants import *
 from train import *
 from helper import *
 from model import *
+import datetime
 
 import random
 
 
-input_lang, output_lang, pairs = prepareData('diag1', 'diag2-4-from-other', False)
+input_lang, output_lang, pairs = prepareData('diag1', 'diag2-other-omit', False)
 print(random.choice(pairs))
 
 
@@ -26,8 +27,11 @@ attn_decoder1 = AttnDecoderRNN(hidden_size, output_lang.n_words, dropout_p=0.1)
 if use_cuda:
     encoder1 = encoder1.cuda()
     attn_decoder1 = attn_decoder1.cuda()
-    
-trainIters(encoder1, attn_decoder1, input_lang, output_lang, pairs, 20, print_every=5)
 
-save('./savedModel/test_2',encoder1, attn_decoder1)
+trainIters(encoder1, attn_decoder1, input_lang, output_lang, pairs, 300000, print_every=1000)
+
+now = str(datetime.datetime.now())[:16].replace('-','_').replace(':', '_').replace(' ', '_')
+save('./savedModel/two_sentences_' + now, encoder1, attn_decoder1)
+
+
 

@@ -28,7 +28,7 @@ if use_cuda:
     encoder1 = encoder1.cuda()
     attn_decoder1 = attn_decoder1.cuda()
 
-trainIters(encoder1, attn_decoder1, input_lang, output_lang, pairs, 300000, print_every=1000)
+trainIters(encoder1, attn_decoder1, input_lang, output_lang, pairs, 300000, print_every=20000)
 
 now = str(datetime.datetime.now())[:16].replace('-','_').replace(':', '_').replace(' ', '_')
 save('./savedModel/two_sentences_' + now, encoder1, attn_decoder1)

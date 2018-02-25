@@ -17,7 +17,7 @@ import random
 
 input_lang, output_lang, pairs = prepareData('diag1', 'diag2-4-from-other', False)
 
-filename = './savedModel/two_sentences_2018_02_25_06_24'
+filename = './savedModel/two_sentences_2018_02_25_19_14'
 encoder1 = torch.load(filename + '_encoder1.pth')
 attn_decoder1 = torch.load(filename + '_attn_decoder1.pth')
 print('load successfully')

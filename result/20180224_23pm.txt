@@ -1,0 +1,23 @@
+Reading lines...
+Read 20966 sentence pairs
+Trimmed to 20966 sentence pairs
+Counting words...
+Counted words:
+diag1 2082
+diag2-other-omit 2056
+['if you did know you d tell me .', 'of course ']
+44m 18s (- 620m 22s) (20000 6%) train = 3.3199 test = 2.7015
+89m 31s (- 581m 54s) (40000 13%) train = 3.0505 test = 4.1032
+134m 52s (- 539m 29s) (60000 20%) train = 2.8231 test = 3.6859
+181m 30s (- 499m 9s) (80000 26%) train = 2.6586 test = 4.7370
+227m 56s (- 455m 53s) (100000 33%) train = 2.5218 test = 3.8591
+274m 59s (- 412m 29s) (120000 40%) train = 2.4342 test = 4.7583
+322m 21s (- 368m 24s) (140000 46%) train = 2.3911 test = 4.2188
+369m 46s (- 323m 33s) (160000 53%) train = 2.4995 test = 4.1222
+417m 16s (- 278m 11s) (180000 60%) train = 2.4042 test = 4.5383
+464m 48s (- 232m 24s) (200000 66%) train = 2.4055 test = 4.8294
+512m 32s (- 186m 22s) (220000 73%) train = 2.4719 test = 4.6353
+560m 26s (- 140m 6s) (240000 80%) train = 2.5956 test = 4.9621
+608m 17s (- 93m 34s) (260000 86%) train = 2.6123 test = 4.7903
+656m 10s (- 46m 52s) (280000 93%) train = 2.6447 test = 5.2787
+704m 12s (- 0m 0s) (300000 100%) train = 2.7816 test = 5.1444

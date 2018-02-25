@@ -1,0 +1,23 @@
+Reading lines...
+Read 20966 sentence pairs
+Trimmed to 20966 sentence pairs
+Counting words...
+Counted words:
+diag1 2082
+diag2-other-omit 2056
+['where are you going ?', 'nowhere # .']
+11m 54s (- 166m 40s) (20000 6%) train = 3.2977 test = 2.5262
+23m 13s (- 150m 58s) (40000 13%) train = 3.0547 test = 2.9637
+34m 36s (- 138m 26s) (60000 20%) train = 2.9544 test = 3.0180
+46m 5s (- 126m 44s) (80000 26%) train = 2.8915 test = 3.1684
+57m 37s (- 115m 14s) (100000 33%) train = 2.8053 test = 3.0539
+69m 20s (- 104m 0s) (120000 40%) train = 2.7049 test = 3.7852
+80m 59s (- 92m 33s) (140000 46%) train = 2.6100 test = 3.8882
+92m 48s (- 81m 12s) (160000 53%) train = 2.5366 test = 3.8481
+104m 39s (- 69m 46s) (180000 60%) train = 2.4907 test = 4.1615
+116m 30s (- 58m 15s) (200000 66%) train = 2.4520 test = 3.8997
+128m 22s (- 46m 40s) (220000 73%) train = 2.4134 test = 4.2474
+140m 18s (- 35m 4s) (240000 80%) train = 2.3631 test = 4.3301
+152m 10s (- 23m 24s) (260000 86%) train = 2.3945 test = 4.0182
+164m 4s (- 11m 43s) (280000 93%) train = 2.3959 test = 4.1989
+176m 2s (- 0m 0s) (300000 100%) train = 2.3890 test = 4.2748

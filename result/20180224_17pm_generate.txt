@@ -1,0 +1,66 @@
+/home/ubuntu/xinghao/cs101-xinghao/model.py:37: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greately increasing memory usage. To compact weights again call flatten_parameters().
+  output, hidden = self.gru(output, hidden)
+/home/ubuntu/xinghao/cs101-xinghao/model.py:75: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greately increasing memory usage. To compact weights again call flatten_parameters().
+  output, hidden = self.gru(output, hidden)
+Reading lines...
+Read 12771 sentence pairs
+Trimmed to 12771 sentence pairs
+Counting words...
+Counted words:
+diag1 1320
+diag2-4-from-other 1316
+load successfully
+> i m off .
+= wish you weren t .
+< d so . remember point <EOS>
+
+> it seems fine .
+= fine ? look here !
+< who him i ? real out ? . <EOS>
+
+> maybe not ? i m feeling lucky . .
+= so am i . but where s my money ?
+< who ? <EOS>
+
+> now we re going to have a fight you and i .
+= are we .
+< go thank <EOS>
+
+> what makes you think he s my friend ?
+= seen you together that s all .
+< sister look <EOS>
+
+> you got these cops outta here . they re comin in too close .
+= come on . i want you to see something .
+< well . <EOS>
+
+> clean .
+= what do you mean he s clean ?
+< who ? <EOS>
+
+> we re actually finally doing this ?
+= looks like it yeah .
+< up mon my questions <EOS>
+
+> yeah so i hear . don t you think you should go get changed ?
+= later .
+< well . <EOS>
+
+> nick charles here ?
+= yes . nick !
+< gone daddy <EOS>
+
+input = i want to go with you !
+output = go questions who <EOS>
+input = what are you doing ?
+output = eddie immediately ! over ! ! <EOS>
+input = who knows ?
+output = well . <EOS>
+input = relax .
+output = be hurt i right <EOS>
+input = fuck you !
+output = go go go go go unless my soon it . <EOS>
+input = do you love me ?
+output = well . <EOS>
+input = when can we marry ?
+output = i mon my years the way . . . <EOS>

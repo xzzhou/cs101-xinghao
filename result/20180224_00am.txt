@@ -1,0 +1,31 @@
+Reading lines...
+Read 20966 sentence pairs
+Trimmed to 20966 sentence pairs
+Counting words...
+Counted words:
+diag1 2082
+diag2-other-omit 2056
+['what happens next ?', 'i live or i die .']
+11m 55s (- 167m 2s) (20000 6%) train = 3.2973 test = 2.5003
+23m 28s (- 152m 35s) (40000 13%) train = 3.0637 test = 3.2286
+34m 59s (- 139m 57s) (60000 20%) train = 2.9926 test = 2.9987
+46m 41s (- 128m 25s) (80000 26%) train = 2.9021 test = 3.0799
+58m 33s (- 117m 6s) (100000 33%) train = 2.7947 test = 3.5380
+70m 29s (- 105m 44s) (120000 40%) train = 2.7215 test = 3.7476
+82m 27s (- 94m 14s) (140000 46%) train = 2.6213 test = 3.6215
+94m 25s (- 82m 37s) (160000 53%) train = 2.5388 test = 3.5631
+106m 28s (- 70m 58s) (180000 60%) train = 2.4650 test = 4.0521
+118m 28s (- 59m 14s) (200000 66%) train = 2.4385 test = 3.9400
+130m 31s (- 47m 27s) (220000 73%) train = 2.4106 test = 3.9674
+142m 39s (- 35m 39s) (240000 80%) train = 2.4114 test = 4.0621
+154m 44s (- 23m 48s) (260000 86%) train = 2.3792 test = 4.2188
+166m 49s (- 11m 54s) (280000 93%) train = 2.4004 test = 4.2596
+178m 57s (- 0m 0s) (300000 100%) train = 2.4242 test = 4.2315
+Traceback (most recent call last):
+  File "main.py", line 31, in <module>
+    trainIters(encoder1, attn_decoder1, input_lang, output_lang, pairs, 300000, print_every=20000)
+  File "/home/ubuntu/xinghao/cs101-xinghao/train.py", line 170, in trainIters
+    save_list('./loss_data/r2_' + now + 'train_loss.txt', train_loss)
+  File "/home/ubuntu/xinghao/cs101-xinghao/helper.py", line 81, in save_list
+    with open(save_filename, 'w', encoding = 'utf-8') as f:
+FileNotFoundError: [Errno 2] No such file or directory: './loss_data/r2_2018_02_24_10_53train_loss.txt'

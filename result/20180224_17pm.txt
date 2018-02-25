@@ -1,0 +1,23 @@
+Reading lines...
+Read 20966 sentence pairs
+Trimmed to 20966 sentence pairs
+Counting words...
+Counted words:
+diag1 2082
+diag2-other-omit 2056
+['you ain t goin nowhere in the middle of the night girl !', 'i ain t your business no more daddy . please let me go .']
+18m 55s (- 264m 53s) (20000 6%) train = 3.2824 test = 2.8569
+37m 28s (- 243m 35s) (40000 13%) train = 3.0001 test = 3.2110
+56m 27s (- 225m 50s) (60000 20%) train = 2.8616 test = 3.4082
+75m 49s (- 208m 30s) (80000 26%) train = 2.6607 test = 3.9682
+95m 27s (- 190m 55s) (100000 33%) train = 2.4798 test = 4.3051
+115m 8s (- 172m 43s) (120000 40%) train = 2.3773 test = 4.2693
+134m 57s (- 154m 14s) (140000 46%) train = 2.2806 test = 4.5413
+154m 56s (- 135m 34s) (160000 53%) train = 2.2691 test = 4.5180
+174m 50s (- 116m 33s) (180000 60%) train = 2.2213 test = 4.8440
+195m 3s (- 97m 31s) (200000 66%) train = 2.2530 test = 5.2412
+215m 8s (- 78m 14s) (220000 73%) train = 2.3060 test = 5.1692
+235m 10s (- 58m 47s) (240000 80%) train = 2.3870 test = 4.5533
+255m 22s (- 39m 17s) (260000 86%) train = 2.4503 test = 4.9510
+275m 25s (- 19m 40s) (280000 93%) train = 2.4039 test = 4.8752
+295m 29s (- 0m 0s) (300000 100%) train = 2.3963 test = 4.9644

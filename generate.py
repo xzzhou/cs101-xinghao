@@ -17,7 +17,7 @@ import random
 import argparse
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--file', '-f', default = 'diag2-4-other-omit', \
+parser.add_argument('--file', '-f', default = 'diag2-other-omit', \
                     type = str, help = 'Data file name (second part)')
 parser.add_argument('--time', '-t', default = '2018_02_25_19_14', \
                     type = str, help = 'Data save name (in form of time)')

@@ -14,10 +14,18 @@ from torch.autograd import Variable
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 import random
+import argparse
 
-input_lang, output_lang, pairs = prepareData('diag1', 'diag2-4-from-other', False)
+parser = argparse.ArgumentParser()
+parser.add_argument('--file', '-f', default = 'diag2-4-from-omit', \
+                    type = str, help = 'Data file name (second part)')
+parser.add_argument('--time', '-t', default = '2018_02_25_19_14', \
+                    type = str, help = 'Data save name (in form of time)')
+args = parser.parse_args()
 
-filename = './savedModel/two_sentences_2018_02_25_19_14'
+input_lang, output_lang, pairs = prepareData('diag1', args.file, False)
+
+filename = './savedModel/two_sentences_' + args.time
 encoder1 = torch.load(filename + '_encoder1.pth')
 attn_decoder1 = torch.load(filename + '_attn_decoder1.pth')
 print('load successfully')

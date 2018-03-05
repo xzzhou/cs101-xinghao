@@ -1,0 +1,66 @@
+/home/ubuntu/xinghao/cs101-xinghao/model.py:37: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greately increasing memory usage. To compact weights again call flatten_parameters().
+  output, hidden = self.gru(output, hidden)
+/home/ubuntu/xinghao/cs101-xinghao/model.py:75: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greately increasing memory usage. To compact weights again call flatten_parameters().
+  output, hidden = self.gru(output, hidden)
+Reading lines...
+Read 20966 sentence pairs
+Trimmed to 20966 sentence pairs
+Counting words...
+Counted words:
+diag1 2082
+diag2-other-omit 2056
+load successfully
+> somebody already did .
+= what ?
+< what the hell ! <EOS>
+
+> hello ?
+= in here !
+< hello . <EOS>
+
+> we know that .
+= who was the man ?
+< yeah . <EOS>
+
+> your mother wants you to tell me about your dreams . i only want to know one thing # . do they come true ?
+= not all of them # i know which ones will .
+< all . going to . <EOS>
+
+> you know that accident up there ?
+= yeah .
+< yeah . <EOS>
+
+> come on #
+= no ! i m going home #
+< he s coming . <EOS>
+
+> i m sorry .
+= i know .
+< what s <EOS>
+
+> it was very dark .
+= yes it was .
+< yes it <EOS>
+
+> i won t have you fighting over me .
+= i m sorry .
+< i m . . . . <EOS>
+
+> hildy ! where s mother ?
+= oh mother she i don t know where she went .
+< i don t know ! <EOS>
+
+input = i want to go with you !
+output = no ! there are you going to come out with you . <EOS>
+input = what are you doing ?
+output = what you you have a feeling . <EOS>
+input = who knows ?
+output = where do you want me ? <EOS>
+input = relax .
+output = don t act like a real . <EOS>
+input = fuck you !
+output = where did you think ? <EOS>
+input = do you love me ?
+output = do you ? <EOS>
+input = when can we marry ?
+output = sure . <EOS>

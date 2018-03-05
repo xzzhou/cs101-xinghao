@@ -1,0 +1,66 @@
+/home/ubuntu/xinghao/cs101-xinghao/model.py:37: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greately increasing memory usage. To compact weights again call flatten_parameters().
+  output, hidden = self.gru(output, hidden)
+/home/ubuntu/xinghao/cs101-xinghao/model.py:75: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greately increasing memory usage. To compact weights again call flatten_parameters().
+  output, hidden = self.gru(output, hidden)
+Reading lines...
+Read 20966 sentence pairs
+Trimmed to 20966 sentence pairs
+Counting words...
+Counted words:
+diag1 2082
+diag2-other-omit 2056
+load successfully
+> yeah .
+= what d you do ?
+< well was they once . . . <EOS>
+
+> don t kid me . i m in no mood for it .
+= for once i m dead on the level crazy about you !
+< once of did did he <EOS>
+
+> i get it .
+= tell me .
+< get what s going . <EOS>
+
+> kill them . not quickly .
+= are you okay ?
+< you ? okay ? <EOS>
+
+> no thanks .
+= no thanks . what does that mean ?
+< no thanks . <EOS>
+
+> something just must ve #frightened her that s all .
+= yeah #something .
+< yeah s <EOS>
+
+> the way you cook . if you could make love i d marry you .
+= we have to talk .
+< that s we <EOS>
+
+> it won t work on you .
+= what are you talking about ?
+< no i to to <EOS>
+
+> someone want to tell me what s going on 
+=  and we brought it back with us !
+< don t . <EOS>
+
+> what time is it ?
+= hang loose . we got all night .
+< later go to <EOS>
+
+input = i want to go with you !
+output = what don t want there be you <EOS>
+input = what are you doing ?
+output = i m going . . . <EOS>
+input = who knows ?
+output = where s get it <EOS>
+input = relax .
+output = don t t know don t want to know . <EOS>
+input = fuck you !
+output = hey your voice # <EOS>
+input = do you love me ?
+output = do me me me me <EOS>
+input = when can we marry ?
+output = let s <EOS>

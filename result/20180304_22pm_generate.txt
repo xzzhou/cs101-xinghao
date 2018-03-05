@@ -1,0 +1,49 @@
+THCudaCheck FAIL file=/opt/conda/conda-bld/pytorch_1512382878663/work/torch/lib/THC/generic/THCStorage.cu line=58 error=2 : out of memory
+/home/ubuntu/xinghao/cs101-xinghao/model.py:37: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greately increasing memory usage. To compact weights again call flatten_parameters().
+  output, hidden = self.gru(output, hidden)
+/home/ubuntu/xinghao/cs101-xinghao/model.py:75: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greately increasing memory usage. To compact weights again call flatten_parameters().
+  output, hidden = self.gru(output, hidden)
+Reading lines...
+Read 20966 sentence pairs
+Trimmed to 20966 sentence pairs
+Counting words...
+Counted words:
+diag1 1918
+diag2-other-omit2 1921
+load successfully
+> are you there ? miles ?
+= yeah i m here .
+< no okay <EOS>
+
+> but he didn t say anything .
+= hang on a second .
+< it . <EOS>
+
+> george . oh jesus christ george . look at you .
+= shhh honey never mind . it s alright . it s over . i quit the business . i m out .
+Traceback (most recent call last):
+  File "generate.py", line 123, in <module>
+    evaluateRandomly(encoder1, attn_decoder1)
+  File "generate.py", line 88, in evaluateRandomly
+    output_words, attentions = evaluate(encoder, decoder, pair[0])
+  File "generate.py", line 68, in evaluate
+    decoder_input, decoder_hidden, encoder_outputs)
+  File "/home/ubuntu/src/anaconda3/lib/python3.5/site-packages/torch/nn/modules/module.py", line 325, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/ubuntu/xinghao/cs101-xinghao/model.py", line 75, in forward
+    output, hidden = self.gru(output, hidden)
+  File "/home/ubuntu/src/anaconda3/lib/python3.5/site-packages/torch/nn/modules/module.py", line 325, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/ubuntu/src/anaconda3/lib/python3.5/site-packages/torch/nn/modules/rnn.py", line 169, in forward
+    output, hidden = func(input, self.all_weights, hx)
+  File "/home/ubuntu/src/anaconda3/lib/python3.5/site-packages/torch/nn/_functions/rnn.py", line 385, in forward
+    return func(input, *fargs, **fkwargs)
+  File "/home/ubuntu/src/anaconda3/lib/python3.5/site-packages/torch/autograd/function.py", line 328, in _do_forward
+    flat_output = super(NestedIOFunction, self)._do_forward(*flat_input)
+  File "/home/ubuntu/src/anaconda3/lib/python3.5/site-packages/torch/autograd/function.py", line 350, in forward
+    result = self.forward_extended(*nested_tensors)
+  File "/home/ubuntu/src/anaconda3/lib/python3.5/site-packages/torch/nn/_functions/rnn.py", line 294, in forward_extended
+    cudnn.rnn.forward(self, input, hx, weight, output, hy)
+  File "/home/ubuntu/src/anaconda3/lib/python3.5/site-packages/torch/backends/cudnn/rnn.py", line 281, in forward
+    workspace = torch.cuda.ByteTensor(fn.workspace_size)
+RuntimeError: cuda runtime error (2) : out of memory at /opt/conda/conda-bld/pytorch_1512382878663/work/torch/lib/THC/generic/THCStorage.cu:58

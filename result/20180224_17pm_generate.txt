@@ -1,0 +1,66 @@
+/home/ubuntu/xinghao/cs101-xinghao/model.py:37: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greately increasing memory usage. To compact weights again call flatten_parameters().
+  output, hidden = self.gru(output, hidden)
+/home/ubuntu/xinghao/cs101-xinghao/model.py:75: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greately increasing memory usage. To compact weights again call flatten_parameters().
+  output, hidden = self.gru(output, hidden)
+Reading lines...
+Read 20966 sentence pairs
+Trimmed to 20966 sentence pairs
+Counting words...
+Counted words:
+diag1 2082
+diag2-other-omit 2056
+load successfully
+> i can t lose more than a hundred .
+= just bring your card . half an hour .
+< that very well around . <EOS>
+
+> did you go to her ?
+= yes .
+< yes . <EOS>
+
+> what s happening ?
+= we re getting out .
+< he says he he know for ben . <EOS>
+
+> when did you ever work in an office ?
+= there s a lot you don t know about me .
+< there . . lot . . . don t know . <EOS>
+
+> it s my brother s neck you want not mine .
+= yours will do !
+< i please yours yours . <EOS>
+
+> for god s sake peter leave her out of it . you don t want her you want me .
+= i need her she s a cop . i have to kill a cop and then #
+< no . don t kill . . . . kill . kill . <EOS>
+
+> let s wait it out .
+= they ll tear this place down within the hour .
+< they ll tear down place down within hour . <EOS>
+
+> i know #it sounds insane .
+= you said it .
+< i said . . <EOS>
+
+> i don t know .
+= this just might be our ticket !
+< what did you think would happen ? <EOS>
+
+> sue . your clothes . lose them .
+= what # ? oh .
+< what ? ? <EOS>
+
+input = i want to go with you !
+output = there ll a time time to <EOS>
+input = what are you doing ?
+output = just watch the girl . <EOS>
+input = who knows ?
+output = me me me me me me me me me me me me <EOS>
+input = relax .
+output = how the hell can i like can relax can i hear what ? just is not at least i <EOS>
+input = fuck you !
+output = hey ? don t know me <EOS>
+input = do you love me ?
+output = me me me ? me ? me . <EOS>
+input = when can we marry ?
+output = well have to know that s <EOS>

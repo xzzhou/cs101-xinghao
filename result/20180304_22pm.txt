@@ -1,0 +1,48 @@
+Reading lines...
+Read 20966 sentence pairs
+Trimmed to 20966 sentence pairs
+Counting words...
+Counted words:
+diag1 1918
+diag2-other-omit2 1921
+['when did you begin having this feeling ?', 'about a week ago . i don t know what brought it on i just started feeling like i didn t want him to touch me .']
+12m 53s (- 502m 43s) (5000 2%) train = 3.6123 test = 2.7762
+25m 23s (- 482m 23s) (10000 5%) train = 3.3248 test = 2.8681
+37m 58s (- 468m 16s) (15000 7%) train = 3.2344 test = 3.4604
+50m 26s (- 453m 56s) (20000 10%) train = 3.1801 test = 3.2001
+62m 53s (- 440m 13s) (25000 12%) train = 3.1133 test = 3.0458
+75m 33s (- 428m 11s) (30000 15%) train = 3.0623 test = 3.5665
+88m 5s (- 415m 18s) (35000 17%) train = 3.0084 test = 2.9474
+100m 47s (- 403m 10s) (40000 20%) train = 2.9856 test = 3.2706
+113m 42s (- 391m 40s) (45000 22%) train = 2.9512 test = 3.6404
+126m 37s (- 379m 53s) (50000 25%) train = 2.8460 test = 3.8002
+139m 29s (- 367m 46s) (55000 27%) train = 2.7880 test = 3.6996
+152m 16s (- 355m 18s) (60000 30%) train = 2.7601 test = 3.5048
+165m 13s (- 343m 9s) (65000 32%) train = 2.6759 test = 3.9223
+178m 9s (- 330m 52s) (70000 35%) train = 2.6549 test = 3.7037
+191m 19s (- 318m 52s) (75000 37%) train = 2.6288 test = 4.1734
+204m 26s (- 306m 40s) (80000 40%) train = 2.6060 test = 4.0836
+217m 32s (- 294m 19s) (85000 42%) train = 2.5595 test = 3.7555
+230m 34s (- 281m 48s) (90000 45%) train = 2.5435 test = 4.1612
+243m 37s (- 269m 15s) (95000 47%) train = 2.4700 test = 3.8627
+256m 41s (- 256m 41s) (100000 50%) train = 2.4555 test = 3.6801
+269m 56s (- 244m 13s) (105000 52%) train = 2.4389 test = 4.5095
+283m 5s (- 231m 37s) (110000 55%) train = 2.4359 test = 3.8989
+296m 18s (- 219m 0s) (115000 57%) train = 2.4635 test = 3.9890
+309m 33s (- 206m 22s) (120000 60%) train = 2.4029 test = 3.9578
+322m 58s (- 193m 47s) (125000 62%) train = 2.4210 test = 4.5286
+336m 10s (- 181m 0s) (130000 65%) train = 2.3728 test = 4.5379
+349m 27s (- 168m 15s) (135000 67%) train = 2.3984 test = 4.4108
+362m 50s (- 155m 30s) (140000 70%) train = 2.3652 test = 4.8282
+376m 14s (- 142m 42s) (145000 72%) train = 2.4135 test = 4.4137
+389m 40s (- 129m 53s) (150000 75%) train = 2.3721 test = 4.6838
+403m 8s (- 117m 2s) (155000 77%) train = 2.3479 test = 4.6690
+416m 37s (- 104m 9s) (160000 80%) train = 2.3672 test = 4.7485
+430m 5s (- 91m 13s) (165000 82%) train = 2.3669 test = 4.6864
+443m 33s (- 78m 16s) (170000 85%) train = 2.3720 test = 4.7823
+456m 48s (- 65m 15s) (175000 87%) train = 2.3262 test = 4.1446
+470m 14s (- 52m 14s) (180000 90%) train = 6.7551 test = 8.3319
+483m 51s (- 39m 13s) (185000 92%) train = 8.5246 test = 11.7158
+497m 37s (- 26m 11s) (190000 95%) train = 13.4874 test = 16.1679
+511m 4s (- 13m 6s) (195000 97%) train = 23.1885 test = 16.0900
+524m 51s (- 0m 0s) (200000 100%) train = 29.1355 test = 25.5400

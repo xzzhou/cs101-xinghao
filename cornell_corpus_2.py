@@ -68,18 +68,18 @@ def main(threshold=50):
             m1 = tag2.search(text_dic[tup[0]])
             m2 = tag2.search(text_dic[tup[1]])
             if m1 is not None:
-                text_dic[tup[0]] = text_dic[tup[0]].replace("...", "#")
+                text_dic[tup[0]] = text_dic[tup[0]].replace("...", "# ")
                 
             if m2 is not None:
-                text_dic[tup[1]] = text_dic[tup[1]].replace("...", "#")
+                text_dic[tup[1]] = text_dic[tup[1]].replace("...", "# ")
                         
             # remove the sentences containing multi byte words
             if is_english(text_dic[tup[0]] + text_dic[tup[1]]):
-                text_dic[tup[0]] = text_dic[tup[0]].replace(". . .", "#")
-                text_dic[tup[1]] = text_dic[tup[1]].replace(". . .", "#")
+                text_dic[tup[0]] = text_dic[tup[0]].replace(". . .", "# ")
+                text_dic[tup[1]] = text_dic[tup[1]].replace(". . .", "# ")
                 #replace -- with $
-                text_dic[tup[0]] = text_dic[tup[0]].replace("--", "$")
-                text_dic[tup[1]] = text_dic[tup[1]].replace("--", "$")
+                text_dic[tup[0]] = text_dic[tup[0]].replace("--", "$ ")
+                text_dic[tup[1]] = text_dic[tup[1]].replace("--", "$ ")
 
                 posts.append([unicodedata.normalize('NFKC', word.lower())
                                  for word in word_tokenize(text_dic[tup[0]])])

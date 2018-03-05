@@ -11,7 +11,7 @@ SOS_token = 0
 EOS_token = 1
 teacher_forcing_ratio = 0.5
 MAX_LENGTH = 100
-hidden_size = 256
+hidden_size = 2048
 
 eng_prefixes = (
     "i am ", "i m ",

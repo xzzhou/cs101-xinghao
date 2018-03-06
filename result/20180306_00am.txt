@@ -1,0 +1,40 @@
+Reading lines...
+Read 20966 sentence pairs
+Trimmed to 20966 sentence pairs
+Counting words...
+Counted words:
+diag1 1918
+diag2-other-omit2 1921
+['put me down you son of a bitch !', 'walter !']
+5m 32s (- 171m 46s) (5000 3%) train = 3.5649 test = 2.4754
+10m 46s (- 161m 36s) (10000 6%) train = 3.2849 test = 2.8908
+15m 59s (- 154m 31s) (15000 9%) train = 3.1381 test = 2.6353
+21m 16s (- 148m 54s) (20000 12%) train = 3.0949 test = 2.9993
+26m 37s (- 143m 44s) (25000 15%) train = 3.0888 test = 3.1419
+31m 54s (- 138m 14s) (30000 18%) train = 3.0629 test = 2.9630
+37m 11s (- 132m 49s) (35000 21%) train = 2.9898 test = 2.7166
+42m 31s (- 127m 34s) (40000 25%) train = 2.9789 test = 2.9316
+47m 58s (- 122m 34s) (45000 28%) train = 2.9343 test = 3.4874
+53m 20s (- 117m 20s) (50000 31%) train = 2.8977 test = 3.2785
+58m 45s (- 112m 10s) (55000 34%) train = 2.8410 test = 3.6181
+64m 13s (- 107m 2s) (60000 37%) train = 2.7423 test = 3.7046
+69m 41s (- 101m 51s) (65000 40%) train = 2.7240 test = 3.5519
+75m 10s (- 96m 38s) (70000 43%) train = 2.6604 test = 3.3627
+80m 42s (- 91m 28s) (75000 46%) train = 2.6381 test = 3.8001
+86m 15s (- 86m 15s) (80000 50%) train = 2.5972 test = 4.3292
+91m 51s (- 81m 3s) (85000 53%) train = 2.5517 test = 3.7419
+97m 30s (- 75m 50s) (90000 56%) train = 2.5177 test = 3.9108
+103m 6s (- 70m 32s) (95000 59%) train = 2.4741 test = 3.8600
+108m 43s (- 65m 14s) (100000 62%) train = 2.4269 test = 4.2326
+114m 22s (- 59m 54s) (105000 65%) train = 2.4200 test = 3.8606
+120m 0s (- 54m 33s) (110000 68%) train = 2.3610 test = 3.9748
+125m 41s (- 49m 10s) (115000 71%) train = 2.3733 test = 4.1313
+131m 19s (- 43m 46s) (120000 75%) train = 2.3215 test = 4.0279
+136m 56s (- 38m 20s) (125000 78%) train = 2.3289 test = 3.9680
+142m 40s (- 32m 55s) (130000 81%) train = 2.2943 test = 4.3534
+148m 21s (- 27m 28s) (135000 84%) train = 2.2983 test = 4.2569
+154m 4s (- 22m 0s) (140000 87%) train = 2.2241 test = 4.5072
+159m 45s (- 16m 31s) (145000 90%) train = 2.2004 test = 4.4513
+165m 29s (- 11m 1s) (150000 93%) train = 2.2373 test = 4.7702
+171m 11s (- 5m 31s) (155000 96%) train = 2.2533 test = 4.7138
+176m 53s (- 0m 0s) (160000 100%) train = 2.2431 test = 4.2976

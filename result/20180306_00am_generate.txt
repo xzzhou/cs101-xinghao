@@ -1,0 +1,66 @@
+/home/ubuntu/xinghao/cs101-xinghao/model.py:37: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greately increasing memory usage. To compact weights again call flatten_parameters().
+  output, hidden = self.gru(output, hidden)
+/home/ubuntu/xinghao/cs101-xinghao/model.py:75: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greately increasing memory usage. To compact weights again call flatten_parameters().
+  output, hidden = self.gru(output, hidden)
+Reading lines...
+Read 20966 sentence pairs
+Trimmed to 20966 sentence pairs
+Counting words...
+Counted words:
+diag1 1918
+diag2-other-omit2 1921
+load successfully
+> michael ?
+= don t turn on the light .
+< yeah . <EOS>
+
+> what ?
+= you ve got a big mouth and now i m going to show you an even bigger one .
+< i s the <EOS>
+
+> what the fuck are we going to do ?
+= hide him .
+< we s going the <EOS>
+
+> that s cool .
+= when can you leave ?
+< yes . <EOS>
+
+> yeah . we just go home .
+= we can t .
+< we can . <EOS>
+
+> yes !
+= you can stay in my room .
+< oh # <EOS>
+
+> well you loved him once i assume . when you first knew him .
+= no .
+< no . <EOS>
+
+> what the fuck you looking at ?
+= nothing .
+< what s a house here ? <EOS>
+
+> i fucked up . i lost control of the situation the one thing they train you for # god what did i do ?
+= just tell us what happened .
+< what can t make it a difference ? <EOS>
+
+> that s the guy you ve been waiting for all these years ?
+= aren t you gonna go introduce yourself ?
+< aren t you ? <EOS>
+
+input = i want to go with you !
+output = who did it have a <EOS>
+input = what are you doing ?
+output = i m ! <EOS>
+input = who knows ?
+output = where do i want ? <EOS>
+input = relax .
+output = how the hell can i relax after seeing what you just saw the door . <EOS>
+input = fuck you !
+output = yeah ! <EOS>
+input = do you love me ?
+output = do love me ! <EOS>
+input = when can we marry ?
+output = we s to the <EOS>

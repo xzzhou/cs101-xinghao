@@ -1,0 +1,66 @@
+/home/ubuntu/xinghao/cs101-xinghao/model.py:37: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greately increasing memory usage. To compact weights again call flatten_parameters().
+  output, hidden = self.gru(output, hidden)
+/home/ubuntu/xinghao/cs101-xinghao/model.py:75: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greately increasing memory usage. To compact weights again call flatten_parameters().
+  output, hidden = self.gru(output, hidden)
+Reading lines...
+Read 20966 sentence pairs
+Trimmed to 20966 sentence pairs
+Counting words...
+Counted words:
+diag1 1918
+diag2-other-omit2 1921
+load successfully
+> sonny 
+= yeah #
+< oh you <EOS>
+
+> henry s got our orders ! we re going home !
+= when ?
+< when ya ? <EOS>
+
+> if you wake first wake me up .
+= what are you going to do ?
+< what ? <EOS>
+
+>  # i supposed you knew her too inspector .
+= i ve met her .
+< i ve got . <EOS>
+
+> why ?
+= yes .
+< i don t know . <EOS>
+
+> take care .
+= hey do you want to have a drink ? i have lots of drinks . and i could $
+< hey . <EOS>
+
+> put something on . you re not supposed to be naked in front of it .
+= why not ?
+< why ? <EOS>
+
+> i ll be right there .
+= where ?
+< what is it ? <EOS>
+
+> besides what about these # ?
+= that s different # i mean # we were fighting for a # for a cause !
+< he did . <EOS>
+
+> i have to go i m sorry to say $
+= be sorry for nothing .
+< you you . . . <EOS>
+
+input = i want to go with you !
+output = you re not . you <EOS>
+input = what are you doing ?
+output = i m just out i just wanted to see you <EOS>
+input = who knows ?
+output = i m i <EOS>
+input = relax .
+output = how the hell i i you i ? <EOS>
+input = fuck you !
+output = what s that ? <EOS>
+input = do you love me ?
+output = i love you <EOS>
+input = when can we marry ?
+output = i want to to you <EOS>

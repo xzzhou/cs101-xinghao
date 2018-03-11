@@ -1,0 +1,46 @@
+Reading lines...
+Read 12771 sentence pairs
+Trimmed to 12771 sentence pairs
+Counting words...
+Counted words:
+diag1 1320
+diag2-4-from-other 1316
+['you were up late last night too rose .', 'yes sir . i had to go to the bathroom .']
+5m 6s (- 189m 17s) (5000 2%) train = 3.3929 test = 3.9478
+9m 50s (- 177m 15s) (10000 5%) train = 3.1302 test = 3.5529
+14m 35s (- 170m 11s) (15000 7%) train = 2.9990 test = 3.7705
+19m 15s (- 163m 41s) (20000 10%) train = 2.9205 test = 2.9649
+24m 0s (- 158m 25s) (25000 13%) train = 2.8589 test = 3.2420
+28m 44s (- 153m 17s) (30000 15%) train = 2.8118 test = 3.1906
+33m 32s (- 148m 34s) (35000 18%) train = 2.7072 test = 3.4000
+38m 25s (- 144m 7s) (40000 21%) train = 2.6120 test = 3.6999
+43m 17s (- 139m 29s) (45000 23%) train = 2.4628 test = 3.8599
+48m 8s (- 134m 47s) (50000 26%) train = 2.4289 test = 3.8939
+53m 1s (- 130m 8s) (55000 28%) train = 2.2770 test = 4.2410
+57m 57s (- 125m 34s) (60000 31%) train = 2.2637 test = 4.1744
+62m 55s (- 121m 0s) (65000 34%) train = 2.1924 test = 4.1885
+67m 55s (- 116m 26s) (70000 36%) train = 2.1055 test = 4.0666
+72m 59s (- 111m 55s) (75000 39%) train = 2.0328 test = 4.3534
+78m 1s (- 107m 16s) (80000 42%) train = 1.9621 test = 4.4326
+83m 4s (- 102m 37s) (85000 44%) train = 1.9230 test = 4.6015
+88m 8s (- 97m 55s) (90000 47%) train = 1.8799 test = 4.6211
+93m 8s (- 93m 8s) (95000 50%) train = 1.8437 test = 4.4840
+98m 11s (- 88m 21s) (100000 52%) train = 1.8129 test = 5.0506
+103m 17s (- 83m 37s) (105000 55%) train = 1.7716 test = 4.5346
+108m 21s (- 78m 48s) (110000 57%) train = 1.7458 test = 4.6486
+113m 24s (- 73m 57s) (115000 60%) train = 1.7146 test = 4.7956
+118m 29s (- 69m 7s) (120000 63%) train = 1.7145 test = 5.0630
+123m 37s (- 64m 16s) (125000 65%) train = 1.6849 test = 4.8566
+128m 45s (- 59m 25s) (130000 68%) train = 1.6910 test = 5.0134
+133m 51s (- 54m 32s) (135000 71%) train = 1.7002 test = 4.9919
+138m 58s (- 49m 38s) (140000 73%) train = 1.6472 test = 5.1034
+144m 7s (- 44m 43s) (145000 76%) train = 1.6776 test = 5.2433
+149m 14s (- 39m 47s) (150000 78%) train = 1.6835 test = 5.0273
+154m 26s (- 34m 52s) (155000 81%) train = 1.6992 test = 5.1061
+159m 35s (- 29m 55s) (160000 84%) train = 1.6779 test = 5.1153
+164m 45s (- 24m 57s) (165000 86%) train = 1.6906 test = 5.3056
+169m 54s (- 19m 59s) (170000 89%) train = 1.6900 test = 5.1929
+175m 1s (- 15m 0s) (175000 92%) train = 1.6778 test = 5.4955
+180m 14s (- 10m 0s) (180000 94%) train = 1.7550 test = 5.5046
+185m 20s (- 5m 0s) (185000 97%) train = 1.7299 test = 5.3082
+190m 27s (- 0m 0s) (190000 100%) train = 1.7007 test = 5.4563

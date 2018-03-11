@@ -1,0 +1,66 @@
+/home/ubuntu/xinghao/cs101-xinghao/model.py:37: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greately increasing memory usage. To compact weights again call flatten_parameters().
+  output, hidden = self.gru(output, hidden)
+/home/ubuntu/xinghao/cs101-xinghao/model.py:75: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greately increasing memory usage. To compact weights again call flatten_parameters().
+  output, hidden = self.gru(output, hidden)
+Reading lines...
+Read 12771 sentence pairs
+Trimmed to 12771 sentence pairs
+Counting words...
+Counted words:
+diag1 1320
+diag2-4-from-other 1316
+load successfully
+> you didn t tell her !
+= we should leave the past alone .
+< we should the past past now the past but you have not guy ? <EOS>
+
+> she s not gonna die .
+= i know that .
+< i know that . <EOS>
+
+> what is that ?
+= real man drink .
+< i don t know . <EOS>
+
+> jeffrey i don t think you ought to do it .
+= why not ?
+< why ? <EOS>
+
+> well ? surprised ?
+= what is all this ? when are you coming home ?
+< what is all man ? when are you coming home coming when were coming home . <EOS>
+
+> hey .
+= do you swear you didn t know ?
+< hey . <EOS>
+
+> how is this sir ?
+= perfect ! perfect !
+< four . of bed is ? ? <EOS>
+
+> guess who i saw today .
+= who ?
+< who ? <EOS>
+
+> it s john isn t it ?
+= it s always john .
+< it s always have what . <EOS>
+
+> can i see your hands ?
+= my hands ?
+< my hands ? <EOS>
+
+input = i want to go with you !
+output = there ll be a be . <EOS>
+input = what are you doing ?
+output = what m <EOS>
+input = who knows ?
+output = where do you get it <EOS>
+input = relax .
+output = don t like the hell like like i don t know . <EOS>
+input = fuck you !
+output = hey the fuck spend . <EOS>
+input = do you love me ?
+output = do love you <EOS>
+input = when can we marry ?
+output = go ? . . <EOS>

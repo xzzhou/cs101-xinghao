@@ -16,7 +16,7 @@ import datetime
 import random
 
 
-input_lang, output_lang, pairs = prepareData('diag1', 'diag2-other-omit2', False)
+input_lang, output_lang, pairs = prepareData('diag1', 'diag2-4-from-other', False)
 print(random.choice(pairs))
 
 
@@ -28,7 +28,7 @@ if use_cuda:
     encoder1 = encoder1.cuda()
     attn_decoder1 = attn_decoder1.cuda()
 
-trainIters(encoder1, attn_decoder1, input_lang, output_lang, pairs, 160000, print_every=5000)
+trainIters(encoder1, attn_decoder1, input_lang, output_lang, pairs, 190000, print_every=5000)
 
 now = str(datetime.datetime.now())[:16].replace('-','_').replace(':', '_').replace(' ', '_')
 save('./savedModel/two_sentences_' + now, encoder1, attn_decoder1)

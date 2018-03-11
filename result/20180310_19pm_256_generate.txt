@@ -1,0 +1,66 @@
+/home/ubuntu/xinghao/cs101-xinghao/model.py:37: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greately increasing memory usage. To compact weights again call flatten_parameters().
+  output, hidden = self.gru(output, hidden)
+/home/ubuntu/xinghao/cs101-xinghao/model.py:75: UserWarning: RNN module weights are not part of single contiguous chunk of memory. This means they need to be compacted at every call, possibly greately increasing memory usage. To compact weights again call flatten_parameters().
+  output, hidden = self.gru(output, hidden)
+Reading lines...
+Read 12771 sentence pairs
+Trimmed to 12771 sentence pairs
+Counting words...
+Counted words:
+diag1 1320
+diag2-4-from-other 1316
+load successfully
+> well for one reason we don t have your other five thousand .
+= who s going to pay me then ?
+< i don t know what you ? <EOS>
+
+> what the fuck am i doing here .
+= what the fuck were you doing here ?
+< what ? <EOS>
+
+> you have to ask me for this . you have to want it do you hear me ?
+= give it to me ! ! !
+< i ? <EOS>
+
+> how about a little of the king ?
+= well why not a little of the king ?
+< i . t <EOS>
+
+> you don t know ?
+= i think i may have . i m not good on the phone .
+< i don t know . <EOS>
+
+> sit over there will you ?
+= me sir ?
+< no . <EOS>
+
+> him .
+= you sure ?
+< i ? <EOS>
+
+> how many of them are there ?
+= too many .
+< nothing . <EOS>
+
+> and ?
+= can i get some help over here ?
+< i . t <EOS>
+
+> our field .
+= what does he know about it ?
+< what ? <EOS>
+
+input = i want to go with you !
+output = i ? . <EOS>
+input = what are you doing ?
+output = i don t know what you re going to know . <EOS>
+input = who knows ?
+output = i . . <EOS>
+input = relax .
+output = i ? <EOS>
+input = fuck you !
+output = i ? . <EOS>
+input = do you love me ?
+output = i . t <EOS>
+input = when can we marry ?
+output = i . t . <EOS>

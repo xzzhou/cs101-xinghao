@@ -1,0 +1,11 @@
+Reading lines...
+Read 12771 sentence pairs
+Trimmed to 12771 sentence pairs
+Counting words...
+Counted words:
+diag1 1320
+diag2-4-from-other 1316
+['it worked ! there they go !', 'let s do it !']
+2m 55s (- 5m 51s) (5000 33%) train = 3.3641 test = 2.5261
+5m 53s (- 2m 56s) (10000 66%) train = 3.1159 test = 2.5680
+8m 52s (- 0m 0s) (15000 100%) train = 3.0261 test = 3.0308
